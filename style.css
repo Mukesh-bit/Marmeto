@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+
+.leftImageSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftImageSection #mainImg {
+  height: 27rem;
+  width: 25rem;
+  border-radius: 5px;
+}
+.leftImageSection .smallImg {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.leftImageSection .smallImg img {
+  height: 5rem;
+  width: 6rem;
+  border-radius: 5px;
+}
+
+
+.rightTextSection {
+  width: 50%;
+}
+.rightTextSection .productTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.rightTextSection #productTitleFirst {
+  color: #d9d9d9;
+}
+.rightTextSection #productTitleSecond {
+  color: #000;
+  font-size: 30px;
+}
+.rightTextSection .productTitle {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+.rightTextSection .price {
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.rightTextSection .price .offPriceSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.rightTextSection .price .offPriceSection h1 {
+  color: #3a4980;
+  font-size: 25px;
+}
+.rightTextSection .price .offPriceSection h2 {
+  color: #ff8080;
+  font-size: 20px;
+  font-weight: 400;
+}
+.rightTextSection .price .compPriceSection h1 {
+  color: #808080;
+  font-size: 15px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+
+.rightTextSection .colorSelector {
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.rightTextSection .colorSelector h1 {
+  color: #B9BBBF;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.rightTextSection .colorSelector .colors button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;  
+
+}
+
+
+.rightTextSection .sizeSelector {
+  padding-top: 20px;
+}
+.rightTextSection .sizeSelector h1 {
+  color: #B9BBBF;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.rightTextSection .sizeSelector input {
+  cursor: pointer;
+}
+.rightTextSection .sizeSelector .sizeContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rightTextSection .sizeSelector .sizeContainer .size {
+  display: flex;
+  align-items: center;
+  background-color: #F3F3F3;
+  padding: 5px 10px;
+  border-radius: 7px;
+  gap: 7px;
+}
+.rightTextSection .sizeSelector .sizeContainer .size p {
+  color: #726C6C;
+  font-weight: 500;
+}
+.rightTextSection .sizeSelector .sizeContainer .size input[type="radio"] {
+  background-color: #726C6C;
+  height: 15px;
+  width: 15px;
+}
+.rightTextSection .sizeSelector .sizeContainer .size input[type="radio"]:checked::after {
+  background: #3A4980;
+  border: 4px solid #3A4980;
+  height: 15px;
+  width: 15px;
+}
+
+
+.rightTextSection .addToCartSection {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 30px;
+}
+.rightTextSection .addToCartSection .addToCartContainer{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.rightTextSection .addToCartSection .quantity{
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 35px;
+  border-radius: 30px;
+  background-color: #F3F3F3;
+}
+.rightTextSection .addToCartSection .quantity button {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3A4980;
+  border: none;
+  cursor: pointer;
+}
+.rightTextSection .addToCartSection .quantity h1 {
+  font-size: 20px;
+  color: #3A4980;
+}
+.rightTextSection .addToCartSection .cartBtn button{
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: none;
+  background: #3A4980;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+}
+.rightTextSection .addToCartSection .cartBtn button i {
+  font-size: 15px;
+}
+.rightTextSection .addToCartSection .cartBtn button p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.rightTextSection .addToCartSection .cartMsg {
+  display: none;
+  width: 90%;
+  padding-block: 5px;
+  padding-inline: 10px;
+  font-weight: 600;
+  background-color: #E7F8B7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.descriptionSection p {
+  color: #B9BBBF;
+  margin-top: 25px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+
+/* Responsive screen */
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+  }
+  .leftImageSection #mainImg {
+    height: 20rem;
+    width: 20rem;
+  }
+  .leftImageSection .smallImg {
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+  .rightTextSection {
+    width: 100%;
+  }
+  .rightTextSection #productTitleSecond {
+    font-size: 25px;
+  }
+  .rightTextSection .colorSelector .colors button {
+    margin-right: 10px;  
+  }
+
+
+  .rightTextSection .sizeSelector .sizeContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+  .rightTextSection .addToCartSection .cartBtn button{
+   width: 9rem;
+   padding: 0;
+   padding-block: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+
+  .descriptionSection p {
+    width: 105%;
+    text-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    padding-top: 60px;
+    gap: 50px;
+  }
+  .leftImageSection .smallImg {
+    width: 23rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .rightTextSection .sizeSelector .sizeContainer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .rightTextSection .addToCartSection .cartBtn button{
+    width: 9rem;
+    padding: 0;
+    padding-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+ }
+
+
+ 

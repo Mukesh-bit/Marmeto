@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <div class="container">
+
+      <div class="leftImageSection">
+
+        <div class="bigImg">
+          <img
+            src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9wJTIwY2xvdGglMjBkZXNpZ25lZHxlbnwwfHwwfHx8MA%3D%3D"
+            id="mainImg"
+            alt=""
+          />
+        </div>
+
+        <div class="smallImg">
+          <img
+            src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9wJTIwY2xvdGglMjBkZXNpZ25lZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9wJTIwY2xvdGglMjBkZXNpZ25lZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9wJTIwY2xvdGglMjBkZXNpZ25lZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9wJTIwY2xvdGglMjBkZXNpZ25lZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+        </div>
+
+      </div>
+
+      <div class="rightTextSection">
+
+        <div class="productTitle">
+          <h6 id="productTitleFirst"></h6>
+          <h1 id="productTitleSecond"></h1>
+        </div>
+
+        <div class="price">
+          <div class="offPriceSection">
+            <h1>
+              <span id="offPrice"></span>.00
+            </h1>
+            <h2>
+              35% off
+            </h2>
+          </div>
+          <div class="compPriceSection">
+            <h1>
+                <span id="compPrice"></span>.00
+            </h1>
+          </div>
+        </div>
+
+        <div class="colorSelector">
+            <h1>Choose a Color</h1>
+            <div class="colors">
+             
+                <button id="firstColor" ></button>
+                <button id="secondColor"></button>
+                <button id="thirdColor"></button>
+                <button id="fourthColor"></button>
+            </div>
+        </div>
+
+        <div class="sizeSelector">
+          <h1>Choose a Size</h1>
+          <div class="sizeContainer">
+            <div class="size">
+              <input type="radio" name="size" id="">
+              <p>Small</p>
+            </div>
+            <div class="size">
+              <input type="radio" name="size" id="">
+              <p>Medium</p>
+            </div>
+            <div class="size">
+              <input type="radio" name="size" id="">
+              <p>Large</p>
+            </div>
+            <div class="size">
+              <input type="radio" name="size" id="">
+              <p>Extra Large</p>
+            </div>
+            <div class="size">
+              <input type="radio" name="size" id="">
+              <p>XXL</p>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="addToCartSection">
+          <div class="addToCartContainer">
+
+            <div class="quantity">
+              <button>-</button>
+              <h1>1</h1>
+              <button>+</button>
+            </div>
+
+            <div class="cartBtn">
+              <button id="addToCartBtn"><i class="ri-shopping-bag-4-line"></i> <p>Add To Cart</p></button>
+            </div>
+
+          </div>
+
+          <div class="cartMsg">
+            <p>Embrace Sideboard with Color Yellow and Size Small added to cart</p>
+          </div>
+        
+        </div>
+
+        <div class="descriptionSection">
+          <p id="description"></p>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
